@@ -1,23 +1,24 @@
 ---
 import TitlesItem from "./TitlesItem.astro";
+
 const TITLES = [
   {
-    title: "Flowbite Application UI v2.0.0",
-    date: "January 13th, 2022",
+    title: "C2.1 English Course",
+    date: "May 5th, 2023",
     description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+      "A course done in the University of La Coruña to improve my English skills.",
   },
   {
-    title: "Flowbite Figma v1.3.0",
+    title: "Cambridge B2 First",
     date: "July 7th, 2021",
     description:
-      "All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.",
+      "The Cambridge B2 First exam is the logical step in your language learning journey between B1 Preliminary and C1 Advanced.",
   },
   {
-    title: "Flowbite Library v1.2.2",
-    date: "December 2nd, 2021",
+    title: "Cambridge B1 Preliminary",
+    date: "March 14th, 2020",
     description:
-      "Get started with dozens of web components and interactive elements built on top of Tailwind CSS.",
+      "The Cambridge B1 Preliminary exam is the logical step in your language learning journey between A2 Key and B2 First.",
   },
 ];
 ---
@@ -25,7 +26,7 @@ const TITLES = [
 <ol class="relative border-s border-gray-200 dark:border-gray-700 ml-4">
   {
     TITLES.map((title) => (
-      <li class="mb-10 ms-6">
+      <li class="mb-12 ms-8">
         <TitlesItem {...title} />
       </li>
     ))
