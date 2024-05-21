@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Titles from "../components/Titles.astro";
+import Badge from "../components/Badge.astro";
+import Image from "../components/Image.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import SectionClass from "../components/SectionClass.astro";
+import TitleIcon from "../components/icons/Title.astro";
+---
+
+<Layout title="Jorge Mera's Portfolio.">
+  <main>
+    <SectionClass class="py-24 pb-20">
+      <Image />
+      <h1 class="text-5xl font-bold flex flex-row gap-x-5">
+        Hey, I am Jorge Mera
+        <a
+          href="https://linkedin.com/in/jorgeemera"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Available</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl opacity-60 py-8">
+        Currently studying <strong>Software Engineering</strong> at the University
+        of La Coruña. I want to become a Full Stack Developer as I always had passion
+        for web development and design.
+      </h2>
+
+      <nav class="flex gap-x-2">
+        <SocialPill href="github.com/jorgeemera">
+          <GitHubIcon class="size-6" />
+        </SocialPill>
+        <SocialPill href="linkedin.com/jorgeemera">
+          <LinkedInIcon class="size-6 rounded-md" />
+        </SocialPill>
+        <SocialPill href="mailto:jorgemerher@gmail.com">
+          <MailIcon class="size-6 rounded-md" />
+        </SocialPill>
+      </nav>
+    </SectionClass>
+
+    <SectionClass id="titles">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
+        Titles
+        <TitleIcon class="size-10" />
+      </h2>
+      <Titles />
+    </SectionClass>
+  </main>
+</Layout>
